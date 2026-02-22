@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Tracker</title>
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="container mx-auto mt-14">
+        <h1 class="text-[#002C5C] font-bold text-3xl mb-5 mx-2 sm:mx-0">Job Application Tracker</h1>
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-4 mx-2 sm:mx-0">
+            <div class="bg-white shadow-sm p-5 rounded-lg">
+                <p class="text-[#323B49] text-sm font-medium">Total</p>
+                <p class="text-[#002C5C]">0</p>
+            </div>
+            <div class="bg-white shadow-sm p-5 rounded-lg">
+                <p class="text-[#323B49] text-sm font-medium">Interview</p>
+                <p class="text-[#10B981]">0</p>
+            </div>
+            <div class="bg-white shadow-sm p-5 rounded-lg">
+                <p class="text-[#323B49] text-sm font-medium">Rejected</p>
+                <p class="text-[#EF4444]">0</p>
+            </div>
+        </section>
+
+        <hr class="container mx-auto my-8 text-[#E6E7E9]">
+    </header>
 </body>
+
 </html>
