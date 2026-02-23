@@ -58,234 +58,243 @@
             </div>
         </div>
         <div class="mt-6 flex gap-2 mb-4">
-            <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn" class="bg-primary text-white shadow-sm px-8 py-[10px] rounded font-medium text-xs">All</button>
-            <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn" class="bg-white shadow-sm px-3 py-[10px] rounded font-medium text-xs">Interview</button> 
-            <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn" class="bg-white shadow-sm px-4 py-[10px] rounded font-medium text-xs">Rejected</button>
+            <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn"
+                class="bg-primary text-white shadow-sm px-8 py-[10px] rounded font-medium text-xs">All</button>
+            <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn"
+                class="bg-white shadow-sm px-3 py-[10px] rounded font-medium text-xs">Interview</button>
+            <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn"
+                class="bg-white shadow-sm px-4 py-[10px] rounded font-medium text-xs">Rejected</button>
         </div>
+
+        <!-- filtered card -->
+        <section id="filtered-section" class="hidden">
+            
+        </section>
 
         <!-- jobs section -->
         <div id="allCards">
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="state btn btn-soft btn-primary">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native.
+                        Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
 
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">WebFlow Agency</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="btn btn-soft btn-primary state">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
 
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="state btn btn-soft btn-primary">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
 
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="state btn btn-soft btn-primary">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
 
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="state btn btn-soft btn-primary">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
 
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="state btn btn-soft btn-primary">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
 
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="state btn btn-soft btn-primary">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
 
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
+                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Remote
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
-                    <button class="btn btn-soft btn-primary">Not Applied</button>
-                    <p class="text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
+                    <button class="state btn btn-soft btn-primary">Not Applied</button>
+                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
                         products
                         used by millions of
                         users worldwide.</p>
                 </div>
                 <div>
-                    <button class="btn btn-outline btn-success">interview</button>
-                    <button class="btn btn-outline btn-error">Rejected</button>
+                    <button class="interview-btn btn btn-outline btn-success">interview</button>
+                    <button class="rejected-btn btn btn-outline btn-error">Rejected</button>
                 </div>
             </div>
         </div>
