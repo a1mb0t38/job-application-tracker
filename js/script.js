@@ -42,14 +42,14 @@ function toggleStyle(id) {
     selected.classList.remove('bg-white', 'text-black');
     selected.classList.add('bg-primary', 'text-white');
 
-    if(id == 'interview-filter-btn'){
+    if (id == 'interview-filter-btn') {
         allCardSection.classList.add('hidden');
         filterSection.classList.remove('hidden');
-    }else if(id == 'all-filter-btn'){
+    } else if (id == 'all-filter-btn') {
         allCardSection.classList.remove('hidden');
         filterSection.classList.add('hidden');
-    }else if(id == 'rejected-filter-btn'){
-         allCardSection.classList.add('hidden');
+    } else if (id == 'rejected-filter-btn') {
+        allCardSection.classList.add('hidden');
         filterSection.classList.remove('hidden');
     }
 }
@@ -72,21 +72,21 @@ mainContainer.addEventListener('click', function (event) {
             companyName,
             roleName,
             moneyOffer,
-            statusPending:'interview',
+            statusPending: 'interview',
             discriptionName
         }
 
         const companyExist = interviewList.find(item => item.companyName == cardinfo.companyName)
-        
+
         if (!companyExist) {
             interviewList.push(cardinfo);
         }
 
-        rejectedList = rejectedList.filter(item=> item.companyName != cardinfo.companyName)
+        rejectedList = rejectedList.filter(item => item.companyName != cardinfo.companyName)
 
         calculateCount();
         renderInterview();
-    }else if (event.target.classList.contains('rejected-btn')) {
+    } else if (event.target.classList.contains('rejected-btn')) {
         const parentElement = event.target.parentNode.parentNode;
         const companyName = parentElement.querySelector('.company').innerText;
         const roleName = parentElement.querySelector('.role').innerText;
@@ -100,19 +100,19 @@ mainContainer.addEventListener('click', function (event) {
             companyName,
             roleName,
             moneyOffer,
-            statusPending:'Rejected',
+            statusPending: 'Rejected',
             discriptionName
         }
 
         const companyExist = rejectedList.find(item => item.companyName == cardinfo.companyName)
-        
+
         if (!companyExist) {
             rejectedList.push(cardinfo);
         }
 
-        interviewList = interviewList .filter(item=> item.companyName != cardinfo.companyName)
+        interviewList = interviewList.filter(item => item.companyName != cardinfo.companyName)
 
-        if(currentStatus = "interview-filter-btn"){
+        if (currentStatus = "interview-filter-btn") {
             renderInterview();
         }
 
@@ -157,7 +157,7 @@ function renderRejected() {
     filterSection.innerHTML = ''
 
     for (let rejected of rejectedList) {
-        
+
 
         let div = document.createElement('div');
         div.className = 'bg-white shadow-sm p-6 mb-4'
