@@ -33,15 +33,15 @@
         <section class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div class="bg-white shadow-sm p-5 rounded-lg">
                 <p class="text-[#323B49] text-sm font-medium">Total</p>
-                <p id="total-jobs" class="text-[#002C5C]">0</p>
+                <p id="total-jobs" class="text-[#002C5C] font-bold text-2xl">0</p>
             </div>
             <div class="bg-white shadow-sm p-5 rounded-lg">
                 <p class="text-[#323B49] text-sm font-medium">Interview</p>
-                <p id="total-interview" class="text-[#10B981]">0</p>
+                <p id="total-interview" class="text-[#10B981] font-bold text-2xl">0</p>
             </div>
             <div class="bg-white shadow-sm p-5 rounded-lg">
                 <p class="text-[#323B49] text-sm font-medium">Rejected</p>
-                <p id="total-rejected" class="text-[#EF4444]">0</p>
+                <p id="total-rejected" class="text-[#EF4444] font-bold text-2xl">0</p>
             </div>
         </section>
 
@@ -53,7 +53,7 @@
         <div class="flex justify-between items-center">
             <h3 class="font-bold text-xl">Available Jobs</h3>
             <div class="flex gap-1">
-                <p class="font-medium text-base text-[#64748B]">0</p>
+                <p id="total" class="font-medium text-base text-[#64748B]">0</p>
                 <p class="font-medium text-base text-[#64748B]">jobs</p>
             </div>
         </div>
@@ -68,7 +68,28 @@
 
         <!-- filtered card -->
         <section id="filtered-section" class="hidden">
-            
+            <div class="max-w-[1110px] mx-auto mt-4 mb-5">
+                <div class="bg-white shadow-sm rounded-lg py-14 px-10 text-center">
+
+                    
+                    <div class="flex justify-center mb-6">
+                        <div class="bg-blue-100 p-6 rounded-2xl">
+                            <i class="fa-regular fa-file-lines text-6xl text-[#7DA8FF]"></i>
+                        </div>
+                    </div>
+
+                    
+                    <h2 class="text-2xl font-semibold text-[#002C5C] mb-1">
+                        No jobs available
+                    </h2>
+
+                    
+                    <p class="text-[#64748B] text-base">
+                        Check back soon for new job opportunities
+                    </p>
+
+                </div>
+            </div>
         </section>
 
         <!-- jobs section -->
@@ -106,23 +127,21 @@
                 <div class="flex justify-between items-center mb-5">
                     <div>
                         <h1 class="company text-[#002C5C] font-semibold text-base mb-1">WebFlow Agency</h1>
-                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
+                        <p class="role text-[#64748B] text-sm">Web Designer & Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="money mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Los Angeles, CA
                     •
-                    Full-time
+                    Part-time
                     •
-                    $130,000 - $175,000</p>
+                    $80,000 - $120,000</p>
                 <div class="mb-5">
                     <button class="btn btn-soft btn-primary state">Not Applied</button>
-                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
-                        products
-                        used by millions of
-                        users worldwide.</p>
+                    <p class="discription text-[#323B49]">Create stunning web experiences for high-profile clients. Must
+                        have portfolio and experience with modern web design trends.</p>
                 </div>
                 <div>
                     <button class="interview-btn btn btn-outline btn-success">interview</button>
@@ -133,24 +152,23 @@
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">DataViz Solutions</h1>
+                        <p class="role text-[#64748B] text-sm">Data Visualization Specialist</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="money mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Boston, MA
                     •
                     Full-time
                     •
-                    $130,000 - $175,000</p>
+                    $125,000 - $165,000</p>
                 <div class="mb-5">
                     <button class="state btn btn-soft btn-primary">Not Applied</button>
-                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
-                        products
-                        used by millions of
-                        users worldwide.</p>
+                    <p class="discription text-[#323B49]">Transform complex data into compelling visualizations.
+                        Required skills: D3.js, React, and strong analytical thinking.
+                    </p>
                 </div>
                 <div>
                     <button class="interview-btn btn btn-outline btn-success">interview</button>
@@ -161,24 +179,22 @@
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">CloudFirst Inc</h1>
+                        <p class="role text-[#64748B] text-sm">Backend Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="money mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Seattle, WA
                     •
                     Full-time
                     •
-                    $130,000 - $175,000</p>
+                    $140,000 - $190,000</p>
                 <div class="mb-5">
                     <button class="state btn btn-soft btn-primary">Not Applied</button>
-                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
-                        products
-                        used by millions of
-                        users worldwide.</p>
+                    <p class="discription text-[#323B49]">Design and maintain scalable backend systems using Python and
+                        AWS. Work with modern DevOps practices and cloud infrastructure.</p>
                 </div>
                 <div>
                     <button class="interview-btn btn btn-outline btn-success">interview</button>
@@ -189,24 +205,22 @@
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Innovation Labs</h1>
+                        <p class="role text-[#64748B] text-sm">UI/UX Engineer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="money mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">Austin, TX
                     •
                     Full-time
                     •
-                    $130,000 - $175,000</p>
+                    $110,000 - $150,000</p>
                 <div class="mb-5">
                     <button class="state btn btn-soft btn-primary">Not Applied</button>
-                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
-                        products
-                        used by millions of
-                        users worldwide.</p>
+                    <p class="discription text-[#323B49]">Create beautiful and functional user interfaces for our suite
+                        of products. Strong design skills and frontend development expertise required.</p>
                 </div>
                 <div>
                     <button class="interview-btn btn btn-outline btn-success">interview</button>
@@ -217,24 +231,23 @@
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">MegaCorp Solutions</h1>
+                        <p class="role text-[#64748B] text-sm">JavaScript Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="money mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">New York, NY
                     •
                     Full-time
                     •
-                    $130,000 - $175,000</p>
+                    $130,000 - $170,00</p>
                 <div class="mb-5">
                     <button class="state btn btn-soft btn-primary">Not Applied</button>
-                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
-                        products
-                        used by millions of
-                        users worldwide.</p>
+                    <p class="discription text-[#323B49]">Build enterprise applications with JavaScript and modern
+                        frameworks. We offer competitive compensation, health insurance, and professional development
+                        opportunities.</p>
                 </div>
                 <div>
                     <button class="interview-btn btn btn-outline btn-success">interview</button>
@@ -245,8 +258,8 @@
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">StartupXYZ</h1>
+                        <p class="role text-[#64748B] text-sm">Full Stack Engineer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
@@ -256,13 +269,11 @@
                     •
                     Full-time
                     •
-                    $130,000 - $175,000</p>
+                    $120,000 - $160,000</p>
                 <div class="mb-5">
                     <button class="state btn btn-soft btn-primary">Not Applied</button>
-                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
-                        products
-                        used by millions of
-                        users worldwide.</p>
+                    <p class="discription text-[#323B49]">Join our fast-growing startup and work on our core platform.
+                        Experience with Node.js and React required. Great benefits and equity package included.</p>
                 </div>
                 <div>
                     <button class="interview-btn btn btn-outline btn-success">interview</button>
@@ -273,24 +284,23 @@
             <div class="bg-white shadow-sm p-6 mb-4">
                 <div class="flex justify-between items-center mb-5">
                     <div>
-                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">Mobile First Corp</h1>
-                        <p class="role text-[#64748B] text-sm">React Native Developer</p>
+                        <h1 class="company text-[#002C5C] font-semibold text-base mb-1">TechCorp Industries</h1>
+                        <p class="role text-[#64748B] text-sm">Senior Frontend Developer</p>
                     </div>
                     <div class="bg-white shadow-sm rounded-full max-w-10">
                         <i class="fa-regular fa-trash-can"></i>
                     </div>
                 </div>
-                <p class="money mb-5 text-[#64748B]">Remote
+                <p class="money mb-5 text-[#64748B]">San Francisco, CA
                     •
                     Full-time
                     •
                     $130,000 - $175,000</p>
                 <div class="mb-5">
                     <button class="state btn btn-soft btn-primary">Not Applied</button>
-                    <p class="discription text-[#323B49]">Build cross-platform mobile applications using React Native. Work on
-                        products
-                        used by millions of
-                        users worldwide.</p>
+                    <p class="discription text-[#323B49]">We are looking for an experienced Frontend Developer to build
+                        scalable web applications using React and TypeScript. You will work with a talented team on
+                        cutting-edge projects.</p>
                 </div>
                 <div>
                     <button class="interview-btn btn btn-outline btn-success">interview</button>
